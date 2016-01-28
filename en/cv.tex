@@ -1,167 +1,99 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Graduate Curriculum Vitae
-% LaTeX Template
-% Version 1.1 (9/12/12)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
-%
-% Important note:
-% This template requires the res.cls file to be in the same directory as the
-% .tex file. The res.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt]{moderncv}
+\moderncvtheme{classic}
+\moderncvcolor{black}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+% Expand a little bit for more space
+\usepackage[scale=0.75]{geometry}
 
-\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\firstname{Alfonso}
+\lastname{Ros}
+\mobile{+49 173 6523397}
+\email{alfonso.ros.88@gmail.com}
+\homepage{www.ldc.usb.ve/~alfonso}
 
-\usepackage{helvet} % Default font is the helvetica postscript font
-%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+\social[linkedin][www.linkedin.com/in/alfonsorosdossantos]{Alfonso Ros Dos Santos}
+\social[github][https://github.com/alfonsoros88]{aldonsoros88}
 
-\setlength{\textwidth}{5.1in} % Text width of the document
+\address{Jochwergbeg 1}{85748 Garching b. M\"unchen}
 
 \begin{document}
+\maketitle
 
-%----------------------------------------------------------------------------------------
-%	NAME AND ADDRESS SECTION
-%----------------------------------------------------------------------------------------
+\section{Education}
 
-\moveleft.5\hoffset\centerline{\Large\bf Alfonso Ros} % Your name at the top
- 
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
- 
-\moveleft.5\hoffset\centerline{+49 173 6523397}
-\moveleft.5\hoffset\centerline{alfonsoros88@gmail.com}
-\moveleft.5\hoffset\centerline{Jochbergweg 1} % Your address
-\moveleft.5\hoffset\centerline{85748, Garching by Munich}
+\cventry{2013--2016}{M.S. Informatics}
+  {Technische Universit\"at M\"unchen}{Germany}{}{%
+    Major: Computer Vision and Machine Learning.
+  }
 
-%----------------------------------------------------------------------------------------
+\cventry{2006--2012}{B.S. Computer Science and Engineering}
+  {Universidad Sim\'on Bol\'{\i}var}{Venezuela}{}{%
+    Major: Machine Learning and Computer Graphics.
+    \newline
+    Award: 2011's Best Computer Science thesis -- IEEE \& Inelectra Venezuela.
+  }
 
-\begin{resume}
+\section{Work Experience}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{EDUCATION}
-
-{Technische Universit\"at M\"unchen, Germany \hfill Germany}\\
-{M.S. in Informatics \hfill Apr.2013--Apr. 2016}\\
-{Major: Computer Vision and Machine Learning}
- 
-{Universidad Sim\'on Bol\'{\i}var \hfill Venezuela}\\
-{B.S. in Computer Science and Engineering \hfill Sep. 2006--Apr. 2012}\\
-{Major: Machine Learning and Computer Graphics}
-{Honors: 2011's Best Computer Science thesis - IEEE \& Inelectra Venezuela.}
-
-%Concentration: Machine Learning and Computer Graphics \\
- 
-%----------------------------------------------------------------------------------------
-%	PROFESSIONAL EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
- 
-\section{EXPERIENCE}
-
-{{\sl Working Student} \hfill Germany}\\
-{Siemens C.T. \hfill Jun.2015--present}\\
-\begin{itemize} \itemsep-2pt % Reduce space between items
-\item Development of CoAP RESTful iterfaces for applications  
-  in constrained environments for the subject of Web of Things.
-\item Embedding applications to contrained environments.
-\end{itemize}
-
-{{\sl Software Developer} \hfill Venezuela}\\
-{talPor Solutions C.A. \hfill Apr.2012--Apr.2013}\\
-\begin{itemize} \itemsep-2pt % Reduce space between items
-\item Back-end and Front-end Python development of different E-Commerce projects
-  using the Django Platform. 
-\end{itemize}
- 
-{{\sl System Administrator} \hfill Venezuela}\\
-{Database Research Group (Prof. Dr. Mar\'{\i}a-Esther Vidal) \hfill 2010--2011}\\
-\begin{itemize} 
-\item Network and machines administration.
-\item Database administration.
-\end{itemize} 
-
-{{\sl System Administrator} \hfill Venezuela}\\
-{Laboratorio Docente de Computaci\'{o}n (Prof. Dr. Blai Bonet) \hfill 2008--2011}\\
-\begin{itemize} 
-\item Informatics Faculty's network administration (e.g. DNS, DHCP, etc.).
-\item Network services administration (e.g E-Mail, NFS, LDAP, etc.).
-\item Teaching of Linux and Programming courses.
-\end{itemize} 
-
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{TECHNICAL \\ SKILLS} 
-
-{\sl Programming languages:} \\
-\begin{itemize} 
-\item Proficient: C/C++, CUDA and Python
-\item Familiar: Lua, Java, Matlab, Bash, Javascript, Ruby, Haskell, Prolog and 
-  C\#
-\end{itemize} 
-
-{\sl Libraries:} \\
-\begin{itemize} 
-\item Proficient: Point Cloud Library, OpenCV, Eigen, OpenMPI and OpenMP
-\item Familiar: CGAL, libfreenect, OpenNI, OpenGL.
-\end{itemize} 
-
-{\sl Operating Systems:} \\
-\begin{itemize} 
-\item Proficient: Debian and CentOS.
-\item Familiar: Solaris 10, FreeBSD and Windows.
-\end{itemize} 
- 
-{\sl Frameworks and Software:} \\
-\begin{itemize} 
-\item Familiar: Django, Android, Maya, Blender, After Effects, OpenLDAP, BIND 
-  (DNS), NFS, Postfix, CUPS, NTP, Unity, Apache, PostgreSQL, Oracle and MySQL.
-\end{itemize} 
-
-%----------------------------------------------------------------------------------------
-%   Languages
-%---------------------------------------------------------------------------------------- 
-
-\vspace{.5cm}
-
-\section{LANGUAGES}
-
-\begin{itemize} 
-\item Spanish (Mother tongue)
-\item English (Professional working proficiency)
-\item German (Elementary proficiency)
-\end{itemize} 
-
-%----------------------------------------------------------------------------------------
-%	EXTRA-CURRICULAR ACTIVITIES SECTION
-%----------------------------------------------------------------------------------------
-
-\vspace{.5cm}
-
-\section{EXTRA-CURRICULAR \\ ACTIVITY} 
-
+\cventry{2015 -- 2016}{Working Student}
+{\textsc{Siemens Corporate Technology}}{Germany}{}{%
 \begin{itemize}
-  \item Playing piano.
-  \item Painting.
-  \item Playing tennis.
-  \item Playing and making video games.
+  \item Development of RESTful interfaces for applications of the 
+    subject of the Web of Things.
+  \item Experience with different ARM processors and the ESP8266 processor.
 \end{itemize}
+}
 
+\cventry{2012 -- 2013}{Software Developer}
+{\textsc{talPor Solutions C.A.}}{Venezuela}{}{%
+\begin{itemize}
+  \item Front-end and Back-end development of different E-Commerce sites
+    on Python using the Django platform.
+  \item Experience guiding the development of a project alone.
+\end{itemize}
+}
 
-%----------------------------------------------------------------------------------------
+\cventry{2010 -- 2011}{System Administrator}
+{Database Research Group (Prof.\ Dr.\ Mar\'{\i}a-Esther Vidal)}{Venezuela}{}{%
+\begin{itemize}
+  \item Network and database administration.
+\end{itemize}
+}
 
-\end{resume}
+\cventry{2008 -- 2011}{System Administrator}
+{Laboratorio Docente de Computaci\'{o}n (Prof.\ Dr.\ Blai Bonet)}{Venezuela}{}{%
+\begin{itemize}
+  \item Network and service administration (e.g. DHCP, DNS, E-Mail, NFS, LDAP).
+  \item Teaching in Linux and Programming courses.
+\end{itemize}
+}
+
+\section{Technical skills}
+
+\cvitem{Programming Languages}{%
+Proficient: \textsc{C/C++}, Python, CUDA and Bash
+\newline
+Familiar: \textsc{JAVA}, lua, C\#, Matlab, Ruby, JavaScript, Haskell and Prolog.
+}
+
+\cvitem{Libraries}{%
+Proficient: Point Cloud Library, Eigen Library, OpenCV, OpenMP, OpenMPI
+\newline
+Familiar: CGAL, libfreenect, OpenNI, OpenGL.
+}
+
+\cvitem{Software}{%
+Familiar: Django, Android, Blender, OpenLDAP, BIND (DNS), NFS, Postfix, CUPS, 
+NTP, NFS, Unity, PostgreSQL, Oracle and MySQL.
+}
+
+\section{Languages}
+
+\cvitem{Spanisch}{Muttersprache}
+\cvitem{Englisch}{Professional working proficiency}
+\cvitem{German}{Elementary proficiency}
+
+\section{Extra-curricular activities}
+\cvitem{}{Playing tennis, piano, painting, making and playing video games.}
+
 \end{document}
