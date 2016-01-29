@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{graphicx}
+
+
+\pagestyle{empty}
+
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{John}
+\def\familyname{Doe}
+\def\FileAuthor{\firstname \familyname}
+\def\FileTitle{\firstname \familyname's cover letter}
+\def\FileSubject{Cover letter}
+\def\FileKeyWords{\firstname \familyname, Cover letter}
+
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+\raggedleft%
+{\bfseries Alfonso Ros}\\[.35ex]
+\small\itshape%
+Jochbergweg 1\\
+85748 Garching b. M\"unchen\\[.35ex]
+\Telefon~+49 173 6523397\\
+\Letter~\href{mailto:alfonso.ros.88@gmail.com}{alfonsoros88@gmail.com}
+
+\end{minipage}\\[1em]
+%
+\begin{minipage}[t]{.4\textwidth}
+\raggedright%
+{\bfseries Siemens Corporate Technology}\\[.35ex]
+\small\itshape%
+Neuperlach S\"ud\\
+81739 M\"unchen
+\end{minipage}
+\hfill % US style
+%\\[1em] % UK style
+\begin{minipage}[t]{.4\textwidth}
+\raggedleft % US style
+\today
+%April 6, 2006 % US informal style
+%05/04/2006 % UK formal style
+\end{minipage}\\[2em]
+
+Dear Sir or Madam,\\[.5em]
+
+I am writing in reference to the position of Research Scientist in the field of 
+Web of Things at the Internet of Things group. I have the pleasure of being 
+acquainted with one of the researchers of your staff, Dr. Darko Anicic. I have 
+being working with him as my supervisor in my recent job as Working Student at 
+Siemens for the past 6 months. He let me know about the position and encouraged
+me to apply.
+
+I have a diverse experience in areas related to Computer Engineering and 
+Research. My early working experience as a System Administrator for the 
+Informatics Faculty back in my home country brought me invaluable knowledge 
+that would turn useful when working in the Web of Things field. In particular,
+I had the opportunity to manipulate and program for different processor
+architectures. From the common x86, going through the SPARC to even 
+Alpha processors. They all taught me about the connection between higher level 
+applications to the underlying metal. Without knowing it, this proved 
+itself useful when I worked with smaller processors used in applications for
+the Internet of Things.
+
+After finishing my Bachelor studies, I decided to continue my studies in 
+Germany, as I am interested in learning the language. In the Technical 
+University of Munich, I found an extraordinary level of education. That 
+motivated me to actively participate in the Computer Vision research group.  
+There I wrote my Master thesis and also collaborated in different research 
+projects. Besides improving my technical skills, that experience gave me a good 
+insight on how to do academical research. In particular, how to write proper 
+scientific articles of good quality.
+
+To the end of my Master's studies, I started working with Dr. Anicic as a 
+Working Student. My main motivation was the curiosity on the field of the 
+Internet of Things, as I was interested to know about its potential. The 
+opportunity to work together with an expert in a groundbreaking company as Siemens was 
+simply extraordinary. I found that it is not just an interesting field but that
+I also enjoy its challenges and related problems. As a direct 
+consequence, Dr. Anicic was satisfied with my performance and encouraged me to 
+continue.
+
+Please take the time to consider my attached resume. I would greatly appreciate 
+the opportunity to personally discuss what I have to bring to the position.
+
+Yours sincerely,\\[1em] % if the opening is "Dear Sir or Madam,"
+%
+%\includegraphics[scale=0.75]{signature_blue}\\
+{\bfseries Alfonso Ros}\\[1.5em]
+%
+{\slshape Enclosure}
+{\slshape Attachment: curriculum vit\ae{}}
+\end{document}
