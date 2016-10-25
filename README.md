@@ -1,3 +1,4 @@
-See the [PDF](https://github.com/alfonsoros88/cv/raw/master/en/cv.pdf)
+# My Curriculum Vitae
 
-![cv](https://raw.githubusercontent.com/alfonsoros88/cv/master/images/cv.png)
+- [English](en/cv.pdf)
+- [German](de/cv.pdf)
