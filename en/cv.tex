@@ -2,70 +2,93 @@
 \moderncvtheme{classic}
 \moderncvcolor{black}
 
+\setlength{\makecvheadnamewidth}{10cm}
+
+% space between dates and the text
+\setlength{\separatorcolumnwidth}{0.025\textwidth}
+
+%\setlength{\listitemsymbolspace}{5pt}
+
 % Expand a little bit for more space
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.95, top=0.5cm, bottom=0.5cm]{geometry}
 
 \firstname{Alfonso}
 \lastname{Ros}
 \title{Curriculum Vitae}
+
 \mobile{+49 173 6523397}
 \email{alfonso.ros.88@gmail.com}
-
 \social[linkedin][www.linkedin.com/in/alfonsorosdossantos]{Alfonso Ros Dos Santos}
-\social[github][https://github.com/alfonsoros88]{alfonsoros88}
-
-\address{St.-Veit-Str. 28}{81673 M\"unchen}
+\social[github][https://github.com/rosds]{rosds}
+\address{Plinganserstr. 7A}{81369 M\"unchen}
 
 \begin{document}
+
 \maketitle
+\vspace*{-1cm}
+
+\section{Summary}
+
+A friendly and dedicated software developer with over 6 years in the German automotive industry, specializing in
+high-performance middleware for automotive applications. Currently working on Apex.Ida, a general-purpose middleware with a
+strong automotive focus and ROS compatible. Previously, as part of the platform team at Autonomous Intelligent Driving GmbH,
+contributed to the development of  a middleware for autonomous driving vehicles. With a strong interest in system-level software
+development, brings expertise in C/C++, Rust focusing on concurrency, performance and embedded systems.
 
 \section{Work Experience}
 
 \cventry{June 2022 - present}{Senior Software Engineer}
 {\textsc{Apex.AI GmbH}}{Germany}{}{%
 \begin{itemize}
-    \item Apex.Ida middleware development (C++17, ROS, SOME/IP).
+    \item Part of Apex.Ida middleware team of about 10 persons, mainly responsible for the support of SOME/IP and CAN transport.
+        (vsomeip, cantools, C++17)
+    \item Implementation of the internal integration testing framework. (Docker, Bazel, Boost.Asio, libssh2)
+    \item Supporting clients on porting their ROS applications to Apex.OS.
 \end{itemize}
 }
 
 \cventry{2020 - 2022}{Software Engineer}
 {\textsc{ESR Labs GmbH}}{Germany}{}{%
 \begin{itemize}
-    \item Contribution to
-        \href{https://github.com/esrlabs/northstar}{Northstar}, a container
-        runtime written in Rust.
-    \item Development of Intrussion Detection System in Rust
+    \item Contribution to \href{https://github.com/esrlabs/northstar}{Northstar}, an open-source container runtime written in
+        Rust. (POSIX, Cgroups, Tokio)
+    \item Responsible for the design and implementation the Intrusion Detection System, an embedded Linux application reacting
+        to concurrent signals (Android's messaging and concurrency, Rust).
 \end{itemize}
 }
 
 \cventry{2019 - 2020}{Software Engineer}
 {\textsc{Autonomous Intelligent Driving GmbH}}{Germany}{}{%
 \begin{itemize}
-  \item Development of the Vehicle's Middleware Transport (C++11, DDS, Linux).
+  \item Part of the Software Platform Team, a group of about 9 persons dedicated to the development of Fusion, a Vehicle
+      Middleware inspired in Qt.
+  \item Mainly contributed to the implementation of object method calls and object interface synchronization. (C++11, rti's DDS)
 \end{itemize}
 }
 
 \cventry{2018 -- 2019}{Project Engineer}
 {\textsc{TTTech Auto AG}}{Germany}{}{%
 \begin{itemize}
-  \item Development of BMW's \textit{Keep Lane Assistant} (C++14, ROS).
+  \item Worked in a self-organized team of 10 persons supporting BMW's Autonomous Driving Project.
+  \item Negotiation and plannification of units of work for every sprint (LeSS)
+  \item mostly contributing to the implementation of the \textit{Keep Lane Assistant} (C++14, ROS).
 \end{itemize}
 }
 
 \cventry{2016 -- 2018}{Software Engineer}
 {\textsc{evosoft GmbH}}{Germany}{}{%
 \begin{itemize}
-  \item Implementation of monitoring system for electrical substations
-    (C/C++, DPDK, RTLinux).
-  \item Setup of Continuous Integration for embedded testing (Yocto-Linux,
-    LAVA, Python, Go)
+  \item Part of small team of 5 persons, responsible to implement a real-time monitoring system for electrical substations
+      (C/C++, DPDK, RTLinux).
+  \item Setup of Continuous Integration and Testing for different micro controllers (Yocto-Linux, LAVA, Python, Go)
 \end{itemize}
 }
 
 \cventry{2015 -- 2016}{Working Student}
 {\textsc{Siemens Corporate Technology}}{Germany}{}{%
 \begin{itemize}
-  \item Implementation of \textit{Internet of Things} systems (C/C++, Cortex-M4, CoAP).
+  \item Implementation embedded engine for semantic information processing of \textit{Internet of Things} descriptions. (C/C++,
+      Cortex-M4, CoAP).
 \end{itemize}
 }
 
@@ -86,11 +109,11 @@
 \section{Technical skills}
 
 \cvitem{Languages}{%
-\textsc{C++17}, Rust, Python, Haskell
+\textsc{C/C++17}, Rust, Python
 }
 
 \cvitem{Software}{%
-  Git, CMake, Bazel, GDB, valgrind, Linux, \textsc{vim}.
+  Git, Bazel, CMake, GDB, Linux, Neovim
 }
 
 \section{Education}
@@ -113,6 +136,6 @@
 \cvitem{German}{Intermediate proficiency}
 
 \section{Hobbies}
-\cvitem{}{playing Video and Board games, painting and a bit of piano playing}
+\cvitem{}{playing Video and Board games, Coffee, painting and a bit of piano playing}
 
 \end{document}
